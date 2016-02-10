@@ -20,18 +20,6 @@ var story = {
 "unfollow5" : unfollow5,
 };
 
-
-var getStory = function(storySection){
-  console.log(story[storySection].toString());
-};
-
-var getStorySelection = function(storySection){
-  var section = story[storySection];
-  console.log(story[storySection].text);
-
-  var op = getAdventureSelectionFollowOption(section);
-  console.log(op);
-
-  var optext = getAdventureOptionText(op);
-  console.log(optext);
-};
+function getStorySection(section){
+  return story[section];
+}
