@@ -51,7 +51,7 @@ var f4 = {
 
 var u4 = {
 "text" : "Shrug it off. She must have been really tired and you've got to get to first hour",
-"action" : "stay3"
+"action" : "unfollow3"
 };
 
 var s4 = {
