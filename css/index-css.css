@@ -1,25 +1,32 @@
 h1{
   text-align: center;
+  padding: 20px;
 }
 
 #storybox{
   border-style: double;
   border-color: black;
   border-width: medium;
+  height: 500px;
 }
 
 #storySection{
   margin-bottom: 50px;
-  text-align: center;
+  text-align: justify;
 }
 
 #storyRow{
-  width: 70px;
-  padding-bottom: 50px;
+  padding: 20px;
+  height: 60%;
 }
 
-#textRow{
+.textRow{
+  padding-left: 20px;
   margin-bottom: 0px;
+}
+
+.optionText{
+  margin-left: 20px;
 }
 
 #buttonRow{
