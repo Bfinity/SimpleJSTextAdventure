@@ -99,37 +99,42 @@ var follow6a = {
 
 var unfollow5b = {
 "text" : "You arrive at first hour completely out of breath but alive. Your friend asks you if you saw that flash of light this morning. She tells you she heard it was Flight, a superhero, flying to destroy a robot that escaped from a near by military testing installation. No one knows the superhero's true identity but thank goodness she managed to bring down that robot because it had been programmed for destruction. Your friend says no one believes her. I mean, it is a crazy story right?",
-"follow" : null,
-"unfollow" : null,
-"snapchat" : null
+"follow" : e,
+"unfollow" : e,
+"snapchat" : e
 };
 
 var follow7 = {
 "text" : "Your mom is shocked that you've discovered her hero identity. She admits that she's been fighting crime since you were a toddler. She had been born with the power of flight and super strength but never used it growing up. After you were born she decided that for your sake she had to do what she could to clean up the world for you. She really didn't think she it was going to take so long to put down one single robot or she would have left you a note so you wouldn't have worried. She swears you to secrecy. Not that anyone would believe such a crazy story anyway.",
-"follow" : null,
-"unfollow" : null,
-"snapchat" : null
+"follow" : e,
+"unfollow" : e,
+"snapchat" : e
 };
 
 var unfollow5 = {
 "text" : "You put the superhero tales out of your head and focus on your algebra test. You know your mom would have a super fit if you failed. You decide to call her after class to make sure she was okay. You're sure she is. It's not like she's exhausted from flying around beating up robot bad guys or anything.",
-"follow" : null,
-"unfollow" : null,
-"snapchat" : null
+"follow" : e,
+"unfollow" :e,
+"snapchat" : e
 };
 
 function getAdventureSelectionText(selection){
   return selection.text;
 };
 
-function getAdventureSelectionFollowOption(selection){
-  return selection.follow;
+function getAdventureSectionOption(selection, option){
+  var option = selection[option];
+  return option;
 };
 
-function getAdventureSelectionUnfollowOption(selection){
-  return selection.unfollow;
+function getAdventureSectionFollowOption(selection){
+  return getAdventureSectionOption(selection, "follow");
 };
 
-function getAdventureSelectionSnapchatOption(selection){
-  return selection.snapchat;
+function getAdventureSectionUnfollowOption(selection){
+  return getAdventureSectionOption(selection, "unfollow");
+};
+
+function getAdventureSectionSnapchatOption(selection){
+  return getAdventureSectionOption(selection, "snapchat");
 };

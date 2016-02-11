@@ -164,6 +164,11 @@ var s11 = {
 "action" : "beginning"
 };
 
+var e = {
+  "text" : " ",
+  "action" : "theEnd"
+};
+
 function getAdventureOptionText(option){
   return option.text;
 };
