@@ -1,0 +1,10 @@
+{
+  "author":"Brandy Foster",
+  "name":"simple text adventure",
+  "version":"0.0.1",
+  "description":"a simple text adventure game",
+  "main":"index.js",
+  "engines": {
+    "node":"*"
+  }
+}
