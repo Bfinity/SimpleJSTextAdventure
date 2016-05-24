@@ -3,8 +3,7 @@ var storySectionObject;
 function initGame(){
   updateStorySection("beginning");
   setButtonOnClick();
-  console.log("initGame being hit");
-};
+}
 
 function updateStorySection(sectionToDisplay){
   var section = getStorySection(sectionToDisplay);
@@ -23,21 +22,18 @@ function setStorySection(storySection){
 function setStorySectionFollowOption(storySection){
   var followoption = getAdventureSelectionFollowOption(storySection);
   var followoptiontext = getAdventureOptionText(followoption);
-
   document.getElementById("followText").innerHTML = followoptiontext;
 };
 
 function setStorySectionUnfollowOption(storySection){
   var unfollowoption = getAdventureSelectionUnfollowOption(storySection);
   var unfollowoptiontext = getAdventureOptionText(unfollowoption);
-
   document.getElementById("unfollowText").innerHTML = unfollowoptiontext;
 };
 
 function setStorySectionSnapchatOption(storySection){
   var snapchatoption = getAdventureSelectionSnapchatOption(storySection);
   var snapchatoptiontext = getAdventureOptionText(snapchatoption);
-
   document.getElementById("snapchatText").innerHTML = snapchatoptiontext;
 };
 
@@ -51,6 +47,10 @@ function setButtonOnClick(){
     buttons[button].addEventListener("click", onButtonClick);
   };
 //  document.getElementById(id).addEventListener("click", onButtonClick);
+};
+
+function setButtonOnClick(id){
+  document.getElementById(id).addEventListener("click", onButtonClick);
 };
 
 function onButtonClick(){

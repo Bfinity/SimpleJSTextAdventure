@@ -129,12 +129,12 @@ function getAdventureSelectionOption(selection, id){
 
 function getAdventureSelectionFollowOption(selection){
   return selection.follow;
-};
+}
 
-function getAdventureSelectionUnfollowOption(selection){
+function getAdventureSectionUnfollowOption(selection){
   return selection.unfollow;
 };
 
-function getAdventureSelectionSnapchatOption(selection){
+function getAdventureSectionSnapchatOption(selection){
   return selection.snapchat;
 };
