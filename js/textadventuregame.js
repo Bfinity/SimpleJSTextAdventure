@@ -49,10 +49,6 @@ function setButtonOnClick(){
 //  document.getElementById(id).addEventListener("click", onButtonClick);
 };
 
-function setButtonOnClick(id){
-  document.getElementById(id).addEventListener("click", onButtonClick);
-};
-
 function onButtonClick(){
   var id = event.target.id;
   var sectionOption = getAdventureSelectionOption(storySectionObject, id);
