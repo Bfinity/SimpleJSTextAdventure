@@ -22,12 +22,11 @@ h1{
 }
 
 .heading{
-  padding: 20px;
+  padding-left: 20px;
   height: 60%;
 }
 
 .textRow{
-  margin-bottom: 0px;
   margin-left: 10px;
   font-weight: bold;
 }
