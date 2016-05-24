@@ -131,10 +131,10 @@ function getAdventureSelectionFollowOption(selection){
   return selection.follow;
 }
 
-function getAdventureSectionUnfollowOption(selection){
+function getAdventureSelectionUnfollowOption(selection){
   return selection.unfollow;
 };
 
-function getAdventureSectionSnapchatOption(selection){
+function getAdventureSelectionSnapchatOption(selection){
   return selection.snapchat;
 };
