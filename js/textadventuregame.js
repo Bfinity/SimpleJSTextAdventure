@@ -1,27 +1,9 @@
+
 var storySectionObject;
-
 function initGame(){
-  // var beginning = getStorySection("beginning");
-  // var beginningText = getAdventureSelectionText(beginning);
-  // var followoption = getAdventureSelectionFollowOption(beginning);
-  // var followoptiontext = getAdventureOptionText(followoption);
-  // var unfollowoption = getAdventureSelectionUnfollowOption(beginning);
-  // var unfollowoptiontext = getAdventureOptionText(unfollowoption);
-  // var snapchatoption = getAdventureSelectionSnapchatOption(beginning);
-  // var snapchatoptiontext = getAdventureOptionText(snapchatoption);
-  // document.getElementById("storySection").innerHTML = beginningText;
-  // document.getElementById("followText").innerHTML = followoptiontext;
-  // document.getElementById("unfollowText").innerHTML = unfollowoptiontext;
-  // document.getElementById("snapchatText").innerHTML = snapchatoptiontext;
-
-  // var beginning = getStorySection("beginning");
-  // setStorySection(beginning);
-  // setStorySectionFollowOption(beginning);
-  // setStorySectionUnfollowOption(beginning);
-  // setStorySectionSnapchatOption(beginning);
   updateStorySection("beginning");
-  console.log("initGame being hit");
-};
+  setButtonOnClick();
+}
 
 function updateStorySection(sectionToDisplay){
   var section = getStorySection(sectionToDisplay);
@@ -38,21 +20,33 @@ function setStorySection(storySection){
 };
 
 function setStorySectionFollowOption(storySection){
-  var followoption = getAdventureSectionFollowOption(storySection);
+  var followoption = getAdventureSelectionFollowOption(storySection);
   var followoptiontext = getAdventureOptionText(followoption);
   document.getElementById("followText").innerHTML = followoptiontext;
 };
 
 function setStorySectionUnfollowOption(storySection){
-  var unfollowoption = getAdventureSectionUnfollowOption(storySection);
+  var unfollowoption = getAdventureSelectionUnfollowOption(storySection);
   var unfollowoptiontext = getAdventureOptionText(unfollowoption);
   document.getElementById("unfollowText").innerHTML = unfollowoptiontext;
 };
 
 function setStorySectionSnapchatOption(storySection){
-  var snapchatoption = getAdventureSectionSnapchatOption(storySection);
+  var snapchatoption = getAdventureSelectionSnapchatOption(storySection);
   var snapchatoptiontext = getAdventureOptionText(snapchatoption);
   document.getElementById("snapchatText").innerHTML = snapchatoptiontext;
+};
+
+function setButtonID(currentId, updatedId){
+  document.getElementById(currentId).id = updatedId;
+};
+
+function setButtonOnClick(){
+  var buttons = document.getElementsByClassName("button");
+  for (var button in buttons){
+    buttons[button].addEventListener("click", onButtonClick);
+  };
+//  document.getElementById(id).addEventListener("click", onButtonClick);
 };
 
 function setButtonOnClick(id){
@@ -61,9 +55,9 @@ function setButtonOnClick(id){
 
 function onButtonClick(){
   var id = event.target.id;
-  var sectionOption = getAdventureSectionOption(storySectionObject, id);
+  var sectionOption = getAdventureSelectionOption(storySectionObject, id);
   var action = getAdentureOptionAction(sectionOption);
-  if(action === "theEnd"){
+  if(action === "end"){
     alert("The End!")
   }else{
   updateStorySection(action);

@@ -164,10 +164,10 @@ var s11 = {
 "action" : "beginning"
 };
 
-var e = {
+var end = {
   "text" : " ",
-  "action" : "theEnd"
-};
+  "action" : "end"
+}
 
 function getAdventureOptionText(option){
   return option.text;
