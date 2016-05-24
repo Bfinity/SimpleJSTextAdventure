@@ -17,7 +17,8 @@ h1{
 
 #storyRow{
   width: 100%;
-  padding: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .heading{
