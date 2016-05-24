@@ -14,12 +14,19 @@ h1{
 }
 
 #storyRow{
-  width: 70px;
-  padding-bottom: 50px;
+  width: 100%;
+  padding: 50px;
 }
 
-#textRow{
+.heading{
   margin-bottom: 0px;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+p{
+  margin-left: 10px;
+
 }
 
 #buttonRow{
