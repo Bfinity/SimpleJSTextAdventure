@@ -16,7 +16,6 @@ h1{
 }
 
 #storyRow{
-<<<<<<< HEAD
   width: 100%;
   padding: 50px;
 }
@@ -27,20 +26,11 @@ h1{
 }
 
 .textRow{
-  padding-left: 20px;
   margin-bottom: 0px;
   margin-left: 10px;
   font-weight: bold;
 }
 
-p{
-  margin-left: 10px;
-
-}
-
-.optionText{
-  margin-left: 20px;
-}
 
 #buttonRow{
   align-content: center;
