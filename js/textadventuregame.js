@@ -43,7 +43,9 @@ function setButtonID(currentId, updatedId){
 
 function setButtonOnClick(){
   var buttons = document.getElementsByClassName("button");
-  for (var button in buttons){
+  console.log(buttons);
+  console.log(buttons.length);
+  for (var button in Array.from(buttons)){
     console.log(button);
     buttons[button].addEventListener("click", onButtonClick);
   };
