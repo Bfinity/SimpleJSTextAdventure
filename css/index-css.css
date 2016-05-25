@@ -24,11 +24,13 @@ h1{
 .heading{
   padding-left: 20px;
   height: 60%;
+  font-weight: bold;
 }
 
 #optionRow{
   height: 50%;
   margin-top: 50px;
+  margin-bottom: 10px;
 }
 
 .textRow{
