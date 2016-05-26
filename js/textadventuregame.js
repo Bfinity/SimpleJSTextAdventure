@@ -3,11 +3,14 @@ var storySectionObject;
 function initGame(){
   updateStorySection("beginning");
   setButtonOnClick();
+  var name = prompt("What is your name?");
+  document.getElementById("name").innerHTML = name;
 }
 
 function updateStorySection(sectionToDisplay){
   var section = getStorySection(sectionToDisplay);
   setStorySection(section);
+  setStorySectionSubtitle(section);
   setStorySectionFollowOption(section);
   setStorySectionUnfollowOption(section);
   setStorySectionSnapchatOption(section);
@@ -17,7 +20,19 @@ function setStorySection(storySection){
   var sectionText = getAdventureSelectionText(storySection);
   storySectionObject = storySection;
   document.getElementById("storySection").innerHTML = sectionText;
+  if(storySectionObject === follow6){
+    console.log("worked");
+    document.getElementById("image").src = "images/supermom.jpg";
+  }
+  else{
+    document.getElementById("image").src = "";
+  }
 };
+
+function setStorySectionSubtitle(storySection){
+  var subtitleText = getAdventureSelectionSubtitle(storySection);
+  document.getElementById("subtitle").innerHTML = subtitleText;
+}
 
 function setStorySectionFollowOption(storySection){
   var followoption = getAdventureSelectionFollowOption(storySection);
@@ -49,7 +64,6 @@ function setButtonOnClick(){
     console.log(button);
     buttons[button].addEventListener("click", onButtonClick);
   };
-//  document.getElementById(id).addEventListener("click", onButtonClick);
 };
 
 function onButtonClick(){
